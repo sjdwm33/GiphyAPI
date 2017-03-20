@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Teen Pop Trivia Game</title>
+	<title>Parks and Rec Gifs</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<!-- Latest compiled and minified CSS -->
@@ -14,7 +14,30 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 </head>
 <body>
-	
-	<script src="./assets/javascript/game.js"></script>
+	<div class = "container">
+		<div class="row">
+			<h1> The Parks and Recreation Team</h1>
+		</div>
+		
+		<div class="row">
+			<div id="buttons-view"></div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-8">
+				<div id="actors-view"></div>
+			</div>
+			<div class="col-md-4">
+			    <form id="actor-form">
+			      <label for="actor-input">Add an Actor</label>
+
+			      <input type="text" id="actor-input"><br>
+
+			      <input id="add-actor" type="submit" value="Add an Actor">
+			    </form>
+			</div>
+		</div>
+	</div>
+	<script src="./assets/javascript/gifs.js"></script>
 </body>
 </html>

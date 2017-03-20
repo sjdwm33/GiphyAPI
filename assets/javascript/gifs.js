@@ -25,7 +25,6 @@ $(document).ready(function(){
 	            actorImage.attr("data-still", results[i].images.fixed_height_still.url);
 	            actorImage.attr("data-state", "still");
 	            actorImage.addClass("gif");
-	            // actorImage.attr("onclick", "clickTest()");
 
 	            gifDiv.prepend(actorImage);
 	            gifDiv.prepend(p);
@@ -69,6 +68,7 @@ $(document).ready(function(){
         var actor = $("#actor-input").val().trim();
         actors.push(actor);
         renderButtons();
+        $("#actor-form").children('#actor-input').val(" ");
       });
 
       $(document).on("click", ".actor", displayActorGifs);
